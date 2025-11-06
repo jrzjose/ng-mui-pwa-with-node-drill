@@ -1,0 +1,15 @@
+services:
+  ng-demo:
+    build: .
+    working_dir: /workspace/ng-t
+    # working_dir: /workspace
+    volumes:
+      - ".:/workspace"
+      # - "/workspace/node_modules"
+      - "/workspace/ng-t/node_modules"
+      - "/workspace/bknd/node_modules"
+    command: /bin/sh -c ../start.sh
+    # command: tail -f /dev/null
+    ports:
+      - "8085:8085"
+      - "3000:3000"

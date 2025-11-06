@@ -1,0 +1,8 @@
+<p>dashboard works!</p>
+<mat-toolbar color="primary">
+    <nav>
+        <a routerLink="members" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">View Members</a>
+        <a routerLink="new-book" routerLinkActive="active">Add New Book</a>
+    </nav>
+</mat-toolbar>
+<router-outlet></router-outlet>

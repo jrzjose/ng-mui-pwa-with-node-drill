@@ -1,0 +1,99 @@
+.form-block {
+    padding: 16px 16px 0 24px;    
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 70%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: #e53935;
+    font-size: 0.875rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.success {
+    margin-top: 1rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.error p {
+    color: #e53935;
+}
+
+.multi-select {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, minmax(14px, auto));
+  grid-template-areas:
+    "lbl mpt"
+    "flr mpt"
+    "slc mpt";
+  grid-gap: 10px;
+}
+
+.lbl {
+  grid-area: lbl;
+}
+.flr {
+  grid-area: flr;
+}
+.slc {
+  grid-area: slc;  
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.tbl-block {
+  padding: 16px 16px 0 24px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.example-table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 300px;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid var(--mat-sys-outline-variant);
+}

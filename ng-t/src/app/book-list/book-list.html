@@ -1,0 +1,16 @@
+<h2>{{ title }}</h2>
+
+@if (wishlist.length > 0) {
+    <div class="wishlist-banner">
+        <span class="heart">❤️</span>
+        My Wishlist:
+        @for (book of wishlist; track book.title) {
+            <!-- Display each book title -->
+            <span class="wishlist-item">{{ book.title }}</span>
+        }
+    </div>
+}
+
+@for(book of books; track book.id) {
+   <app-book-card [book]="book" (wishlistAdded)="onWishlistAdded($event)" (bookBooked)="onBookBooked($event)"></app-book-card>
+}

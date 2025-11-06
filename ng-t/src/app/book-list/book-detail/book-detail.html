@@ -1,0 +1,14 @@
+<p>book-detail works!</p>
+<h2>Book detail</h2>
+<hr />
+
+@if(book) {
+    <div>
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.description }}</p>
+        <p>{{ book.price | currency }}</p>
+        <p>{{ book.date | date:'longDate' }}</p>
+
+        <img [src]="book.img" [alt]="book.title" width="100" />
+    </div>
+}

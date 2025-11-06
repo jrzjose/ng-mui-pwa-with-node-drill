@@ -1,0 +1,89 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Pragmatic Programmer",
+      "description": "The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt and David Thomas",
+      "price": 49,
+      "date": "1999-10-01",
+      "img": "booklogo.png",
+      "soldOut": false
+    },
+    {
+      "id": 2,
+      "title": "Learning Python",
+      "description": "Learning Python",
+      "price": 99,
+      "date": "2025-04-10",
+      "img": "booklogo.png",
+      "soldOut": true
+    },
+    {
+      "id": 3,
+      "title": "Java Fundamentals",
+      "description": "Java Fundamentals",
+      "price": 45,
+      "onSale": true,
+      "date": "2025-05-05",
+      "img": "booklogo.png",
+      "soldOut": false
+    },
+    {
+      "id": 1738353527361,
+      "title": "Clean Code",
+      "description": "Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin",
+      "price": 100,
+      "date": "2025-04-01",
+      "img": "booklogo.png",
+      "onSale": false,
+      "soldOut": false
+    },
+    {
+      "id": 1759251951584,
+      "title": "Learning Spark",
+      "description": "Something Something Something Something ",
+      "price": 10,
+      "date": "2025-10-01",
+      "img": "booklogo.png",
+      "onSale": false,
+      "soldOut": false
+    }
+  ],
+  "members": [
+    {
+      "id": 1762455517274,
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "enrolledBookIds": [
+        2
+      ]
+    },
+    {
+      "id": 1762455530834,
+      "name": "test2",
+      "email": "test2@gmail.com",
+      "enrolledBookIds": [
+        3
+      ]
+    },
+    {
+      "id": 1762455531372,
+      "name": "jose",
+      "email": "demo@gmail.com",
+      "enrolledBookIds": [
+        2
+      ]
+    },
+    {
+      "id": 1762460243541,
+      "name": "abc",
+      "email": "abc@demo.com",
+      "enrolledBookIds": [
+        2,
+        3,
+        1738353527361,
+        1
+      ]
+    }
+  ]
+}

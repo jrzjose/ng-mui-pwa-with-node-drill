@@ -1,0 +1,19 @@
+@if(book) {
+    <div class="book-card">
+        <img [src]="book.img" [alt]="book.title" width="100">
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.description }}</p>
+        <p>{{ book.price | currency:'USD' }}</p>
+        <p>{{ book.date | date:'longDate' }}</p>
+        <p [hidden]="!book.soldOut">Sold out</p>
+        @if (book.price < 50) {
+            <div class="special-offer">Special Offer!</div>
+        }
+        @if (book.onSale) {
+            <div class="sale-banner">On Sale!</div>
+        }
+        <button (click)="onAddToWishlist()">Add to Wishlist</button>
+        <button [disabled]="book.soldOut" (click)="onBookBooked()">Book book</button>
+        <button (click)="goToDetails(book.id)">See details</button>
+    </div>
+}

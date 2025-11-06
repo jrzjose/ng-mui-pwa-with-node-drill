@@ -1,0 +1,31 @@
+{
+  "id": "bookApp",
+  "name": "ng-t",
+  "short_name": "ng-t",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "description": "Some demo app showcasing PWA features...",
+  "screenshots": [
+    {
+      "src": "assets/screenshot.png",
+      "sizes": "784x1168",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Application"
+    }
+  ],  
+  "icons": [
+    {
+      "src": "icons/booklogo_144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/booklogo.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ]
+}

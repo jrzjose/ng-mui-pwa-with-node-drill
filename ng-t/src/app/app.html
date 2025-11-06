@@ -1,0 +1,20 @@
+<main class="main">
+  <div class="content">
+    
+    <mat-toolbar color="primary">
+      <h1>Book Trade</h1>
+      <div style="flex: 1 1 auto"></div>
+      <nav>
+        <a routerLink="/books" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Books</a>
+        <a routerLink="/sign-up" routerLinkActive="active">Sign up</a>
+        <a routerLink="/admin" routerLinkActive="active">Admin</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+      </nav>
+    </mat-toolbar>
+
+    <!-- <div class="divider" role="separator" aria-label="Divider"></div> -->
+    
+     <router-outlet></router-outlet>
+    
+  </div>
+</main>
